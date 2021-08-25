@@ -1,0 +1,34 @@
+<?php
+require "funcoes.php";
+
+//Funções para montar o cabeçalho, rodapé e menu
+cabecalho();
+menu();
+
+//Conecta ao banco de dados
+$con = mysqli_connect("localhost","root","","estetica_agil");
+
+//Variáveis que recebem os dados do formulário preenchido
+$nome = $_POST['nome'];
+$qtd = $_POST['qtd'];
+$marca = $_POST['marca'];
+$preco = $_POST['preco'];
+$descricao = $_POST['descricao'];
+$img = $_POST['img'];
+
+//Instrução SQL para gravar os dados no banco
+$sql = "insert into produtos values (0,'$nome','$qtd','$marca','$preco',"
+. " '$descricao','$img')";
+//A variável $res irá conectar no banco e executar a gravação dos dados
+$res = mysqli_query($con,$sql);
+
+/*Se ocorrer o $res, os dados serão gravados, e a página será
+retornada para cadlivro.php */
+if($res){
+	echo"<p><br />Produto cadastrado com sucesso!<p>";
+	retornar("cadProduto.php");
+}else{
+	echo "<p><br />Erro ao cadastrar produto!";
+}
+rodape();
+?>

@@ -8,7 +8,7 @@ function cabecalho(){
 	}
 	echo "<html>
 	<head>
-	<title>Biblioteca Virtual</title>
+	<title>Estética Ágil</title>
 	<link href=\"estilo.css\" rel=\"stylesheet\"
 	type=\"text/css\">
 	<script>
@@ -22,7 +22,7 @@ function cabecalho(){
 	<body>
 	<div id=\"principal\">
 	<div id=\"cabecalho\">
-	Biblioteca Virtual <br> O seu acervo digital Online
+	Estética Ágil <br> Controle e Gestão de Clínicas de Estéticas
 	<table width=\"100%\">
 	<tr> 
 	<table align=\"center\">
@@ -30,7 +30,7 @@ function cabecalho(){
 	<img src=\"imagens/book1.jpg\" width=\"110\" height=\"130\" alt=\"Biblioteca Virtual\">
 	</td>
 	<td>
-	<div id=\"usuario\">Bem vindo:$login</div>
+	<div id=\"usuario\">Logado como: $login</div>
 	</td>
 	<td>
 	<img src=\"imagens/book2.jpg\" width=\"110\" height=\"130\" alt=\"Biblioteca Virtual\">
@@ -62,6 +62,7 @@ function acesso(){
 
 function menu(){
 	echo "<div id=\"menu\">
+	<a href=\"cadCliente.php\">Cadastro de Cliente</a> |
 	<a href=\"cadUsuario.php\">Cadastra Usuarios</a> |
 	<a href=\"cadlivro.php\">Cadastra Livros</a> |
 	<a href=\"manutencaolivros.php\">Manutencao Livros</a> |
