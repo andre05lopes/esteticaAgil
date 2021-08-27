@@ -2,11 +2,11 @@
 require "funcoes.php";
 cabecalho();
 menu();
-acesso();
+//acesso();
 
-$nome = $_GET["txttipo"];
+$codigo = $_GET["txttipo"];
 $con = mysqli_connect("localhost","root","","estetica_agil");
-$sql = "select * from produtos where nome = $nome";
+$sql = "select * from produtos where id = $codigo";
 $res = mysqli_query($con,$sql);
 
 echo "<table width='100%'>
@@ -17,11 +17,11 @@ echo "<table width='100%'>
 while($row = mysqli_fetch_array($res)){
 	echo "<tr bgcolor='#cccccc'>
 	<td>
-	Código: $row[0] -
+	Código: $row[0]<br>
 	Nome: $row[1]<br>
 	Qtd: $row[2]<br>
 	Marca: $row[3]<br>
-	Preço: $row[4] -
+	Preço: $row[4]<br>
 	Descrição: $row[5]<br>
 	IMG: $row[6]<br>
 	</td>

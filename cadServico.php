@@ -3,6 +3,7 @@
 require "funcoes.php";
 cabecalho();
 menu();
+//acesso();
 ?>
 <h1>Pacote de Serviços</h1>
 <form id="f1" name="f1" method="post" action="gravarServico.php" >

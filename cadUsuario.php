@@ -3,14 +3,14 @@
 require "funcoes.php";
 cabecalho();
 menu();
-acesso();
+//acesso();
 ?>
 
 <!--
 Formulário de cadastro de usuários
 -->
 
-<h1>Cadastro de Usuários do Sistema</h1>
+<h1 align="center">Cadastro de Usuários do Sistema</h1>
 <form id="f1" name="f1" method="post" action="gravarUsuario.php">
 
 <p>Nome:
@@ -24,9 +24,10 @@ Formulário de cadastro de usuários
 <input name="login" type="text" id="login" placeholder="Informe um id de usuário" size="50" maxlength="50" />
 </label>
 </p>
+
 <p>Senha:
 <label>
-<input name="senha" type="password" id="txtsenha" placeholder="Informe um senha" size="50" maxlength="50" />
+<input name="senha" type="password" id="txtsenha" placeholder="Informe uma senha" size="50" maxlength="50" />
 </label>
 </p>
 

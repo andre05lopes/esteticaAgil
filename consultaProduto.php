@@ -1,13 +1,16 @@
 <?php
 require "funcoes.php";
 cabecalho();
+menu();
 ?>
-
+<h1 align="center">Consultar Produtos</h1>
 <form id="f1" name="f1" method="post" action="buscarProduto.php" >
+  
     <label>
         <input type="radio" name="txttipo" id="radio" value="nome" checked/>
         Nome do Produto
     </label>
+    
     <label>
         <input type="radio" name="txttipo" id="radio2" value="marca" />
         Marca

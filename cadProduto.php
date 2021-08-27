@@ -3,6 +3,7 @@
 require "funcoes.php";
 cabecalho();
 menu();
+//acesso();
 ?>
 <h1>Cadastro de Produtos</h1>
 <form id="f1" name="f1" method="post" action="gravarProduto.php" >

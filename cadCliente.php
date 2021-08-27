@@ -3,6 +3,7 @@
 require "funcoes.php";
 cabecalho();
 menu();
+//acesso();
 ?>
 <h1>Cadastro de Cliente</h1>
 <form id="f1" name="f1" method="post" action="gravarCliente.php" >
@@ -21,11 +22,13 @@ menu();
     </p>
 		<label for="genero">Gênero: </label><br>
         Masculino
-		<input type="radio" name="genero" id="genero" value="M" checked />
+		<input type="radio" name="genero" id="genero" value="M" checked /> |
         Feminino
-        <input type="radio" name="genero" id="genero" value="F" checked />
+        <input type="radio" name="genero" id="genero" value="F" checked /> |
         Outros
-        <input type="radio" name="genero" id="genero" value="O" checked />
+        <input type="radio" name="genero" id="genero" value="O" checked /> |
+		Indefinido
+        <input type="radio" name="genero" id="genero" value="I" checked /> |
 		
 	</p>
 		<label for="endereco">Endereço:</label>

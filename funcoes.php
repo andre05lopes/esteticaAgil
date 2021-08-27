@@ -64,10 +64,12 @@ function menu(){
 	echo "<div id=\"menu\">
 	<a href=\"cadCliente.php\">Cadastro de Cliente</a> |
 	<a href=\"cadUsuario.php\">Cadastra Usuarios</a> |
-	<a href=\"cadlivro.php\">Cadastra Livros</a> |
-	<a href=\"manutencaolivros.php\">Manutencao Livros</a> |
-	<a href=\"consultalivros.php\">Con. Livros</a> |
-	<a href=\"relatorio.php\">Relatorio Livros</a> |
+	<a href=\"cadProduto.php\">Produtos</a> |
+	<a href=\"cadServico.php\">Serviços</a> |
+	<a href=\"consultaProduto.php\">Consultar Produtos</a> |
+	<a href=\"consultaServico.php\">Consultar Serviços</a> |
+	<a href=\"vendas.php\">Vendas</a> |
+	<a href=\"relatorio.php\">Relatorio</a> |
 	<a href=\"acessos.php\">Acessos Sistema</a> |
 	<a href=\"mudasenha.php\">Alterar Senha</a> |
 	<a href=\"logout.php\">Sair</a></div>";
