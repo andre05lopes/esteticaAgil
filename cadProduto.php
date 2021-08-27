@@ -6,7 +6,7 @@ menu();
 //acesso();
 ?>
 <h1>Cadastro de Produtos</h1>
-<form id="f1" name="f1" method="post" action="gravarProduto.php" >
+<form id="f1" name="f1" method="post" action="gravarProduto.php" enctype="multipart/form-data" >
 
 		<label for="nome">Nome:</label>
 		<input type="text" name="nome" id="nome" placeholder="Infome o nome do produto" size="100" maxlength="100" />
@@ -33,8 +33,8 @@ menu();
 
     </p>
     
-		<label for="img">Foto </label>
-		<input type="text" name="img" id="img" size="15" maxlength="15" />
+		<label for="img">Selecione uma imagem </label><br>
+		<input type="file" name="img"/>
 	
 	<p>
 		<label>

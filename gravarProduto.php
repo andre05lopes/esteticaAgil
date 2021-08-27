@@ -5,6 +5,14 @@ require "funcoes.php";
 cabecalho();
 menu();
 
+if(isset($_FILES['img'])){
+	date_default_timezone_set("Brazil/East"); //Timezone padrão
+	$ext = strtolower(substr($_FILES['img']['name'], -4)); //Capturando a extensão do arquivo
+	$novoNome = date("Y.m.d-H.i.s") . $ext; //Definindo novo nome para o arquivo
+	$dir = 'imagensProduto/'; //Diretório do upload
+
+	move_uploaded_file($_FILES['img']['tmp_name'], $dir.$novoNome); //Fazer o upload do arquivo
+}
 //Conecta ao banco de dados
 $con = mysqli_connect("localhost","root","","estetica_agil");
 
@@ -14,7 +22,7 @@ $qtd = $_POST['qtd'];
 $marca = $_POST['marca'];
 $preco = $_POST['preco'];
 $descricao = $_POST['descricao'];
-$img = $_POST['img'];
+$img = $novoNome;
 
 //Instrução SQL para gravar os dados no banco
 $sql = "insert into produtos values (0,'$nome','$qtd','$marca','$preco',"
