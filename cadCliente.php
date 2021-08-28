@@ -76,7 +76,7 @@ menu();
 	</p>
     
         <label for="email">Email:</label>
-		<input type="text" name="email" id="email" placeholder="Informe o e-mail" size="40" maxlength="50" />
+		<input type="text" name="email" id="email" placeholder="seuemail@seudominio.com" size="40" maxlength="50" />
 	
 	</p>
 	

@@ -5,20 +5,29 @@ cabecalho();
 menu();
 //acesso();
 
+if(isset($_FILES['img'])){
+	date_default_timezone_set("Brazil/East"); //Timezone padrão
+	$ext = strtolower(substr($_FILES['img']['name'], -4)); //Capturando a extensão do arquivo
+	$novoNome = date("Y.m.d-H.i.s") . $ext; //Definindo novo nome para o arquivo
+	$dir = 'imagensProduto/'; //Diretório do upload
+
+	move_uploaded_file($_FILES['img']['tmp_name'], $dir.$novoNome); //Fazer o upload do arquivo
+}
+
 //Variáveis
-$codigo = $_POST["codigo"];
+$id = $_POST["id"];
 $nome = $_POST["nome"];
 $qtd = $_POST["qtd"];
 $marca = $_POST["marca"];
 $preco = $_POST["preco"];
 $descricao = $_POST["descricao"];
-$img = $_POST["img"];
+$img = $novoNome;
 
 $con = mysqli_connect("localhost","root","","estetica_agil");
 
 $sql = "update produtos set nome ='$nome', qtd='$qtd',"
 . " marca='$marca', preco='$preco', descricao='$descricao',"
-. "img='$img' where codigo='$codigo'";
+. "img='$img' where id='$id'";
 
 $res = mysqli_query($con,$sql);
 

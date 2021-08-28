@@ -72,7 +72,9 @@ function menu(){
 	<a href=\"relatorio.php\">Relatorio</a> |
 	<a href=\"acessos.php\">Acessos Sistema</a> |
 	<a href=\"mudasenha.php\">Alterar Senha</a> |
+	<a href=\"alterarProduto.php\">Alterar Produto</a> |
 	<a href=\"logout.php\">Sair</a></div>";
+	
 }
 
 function voltar(){

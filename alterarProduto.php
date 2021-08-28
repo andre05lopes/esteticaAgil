@@ -4,15 +4,15 @@ cabecalho();
 menu();
 //acesso();
 
-$codigo = $_GET["codigo"];
+$id = $_GET["id"];
 
 $con = mysqli_connect("localhost","root","","estetica_agil");
 
-$sql = "select * from produtos where codigo = $codigo";
+$sql = "select * from produtos where id = $id";
 $res = mysqli_query($con,$sql);
 
 while ($row = mysqli_fetch_array($res)) {
-	$codigo    =    $row[0];
+	$id		   =    $row[0];
 	$nome      =    $row[1];
 	$qtd       =    $row[2];
 	$marca     =    $row[3];
@@ -23,8 +23,8 @@ while ($row = mysqli_fetch_array($res)) {
 }
 ?>
 <body><p><br>
-    <form id="f1" name="f1" method="post" action="gravaraltProduto.php" >
-        <input type="hidden" name="codigo" value="<?php echo $codigo ?>" />
+    <form id="f1" name="f1" method="post" action="gravaraltProduto.php" enctype="multipart/form-data" >
+        <input type="hidden" name="id" value="<?php echo $id ?>" />
 
 		<label for="nome">Nome:</label>
 		<input type="text" name="nome" id="nome" placeholder="Infome o nome do produto" size="100" maxlength="100" value="<?php echo $nome ?>" />
@@ -52,7 +52,7 @@ while ($row = mysqli_fetch_array($res)) {
     </p>
     
 		<label for="img">Foto </label>
-		<input type="text" name="img" id="img" size="15" maxlength="15" value="<?php echo $img ?>" />
+		<input type="file" name="img" value="<?php echo $img ?>" />
 	
 	<p>
 		<label>

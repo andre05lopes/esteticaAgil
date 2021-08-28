@@ -4,9 +4,9 @@ cabecalho();
 menu();
 //acesso();
 
-$codigo = $_GET["txttipo"];
+$id = $_GET["id"];
 $con = mysqli_connect("localhost","root","","estetica_agil");
-$sql = "select * from produtos where id = $codigo";
+$sql = "select * from produtos where id = $id";
 $res = mysqli_query($con,$sql);
 
 echo "<table width='100%'>
