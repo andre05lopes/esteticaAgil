@@ -22,6 +22,8 @@ echo "<table width='100%'>
 <td>DDD</td>
 <td>Nº Celular</td>
 <td>Email</td>
+<td>Excluir</td>
+<td>Alterar</td>
 <tr>";
 
 //$row recebe o $res e exibe os detalhes do produto
@@ -39,10 +41,10 @@ while ($row = mysqli_fetch_array($res)) {
     <td>$row[13] </td>
     
     <td>
-	<a href='alterarCliente.php?id=$row[0]'>Alterar Cliente</a></td>
+	<a href='alterarCliente.php?id=$row[0]'>Alterar</a></td>
 	</td>
     <td>
-    <a href=\"#\" onclick=\"excluir('excluirCliente.php?id=$row[0]&txttipo=$tipo&txtpesquisa=$pesquisa','Codigo do Produto ($row[0])') \";>Excluir Cliente</a>
+    <a href=\"#\" onclick=\"excluir('excluirCliente.php?id=$row[0]&txttipo=$tipo&txtpesquisa=$pesquisa','Codigo do Produto ($row[0])') \";>Excluir</a>
     </td>
 	</tr>";
 }

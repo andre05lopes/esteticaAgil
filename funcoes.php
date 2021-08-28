@@ -65,9 +65,9 @@ function menu(){
 	<a href=\"cadCliente.php\">Cadastro de Cliente</a> |
 	<a href=\"cadUsuario.php\">Cadastra Usuarios</a> |
 	<a href=\"cadProduto.php\">Novo Produto</a> |
-	<a href=\"cadServico.php\">Serviços</a> |
+	<a href=\"cadServico.php\">Novo Serviço</a> |
 	<a href=\"consultaProduto.php\">Consultar Produtos</a> |
-	<a href=\"consultaCliente.php\">Consultar Cliente</a> |
+	<a href=\"consultaCliente.php\">Consultar Clientes</a> |
 	<a href=\"consultaServico.php\">Consultar Serviços</a> |
 	<a href=\"vendas.php\">Vendas</a> |
 	<a href=\"relatorio.php\">Relatorio</a> |
