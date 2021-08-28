@@ -18,10 +18,10 @@ $sql = "insert into usuarios values (0,'$nome','$login','$senha')";
 $res = mysqli_query($con,$sql);
 
 /*Se ocorrer o $res, os dados serão gravados, e a página será
-retornada para cadlivro.php */
+retornada para cadUsuario.php */
 if($res){
 	echo "<p><br />Usuário cadastrado com sucesso!<p>";
-	retornar("cadlivro.php");
+	retornar("cadUsuario.php");
 }else{
 	echo "<p><br />Erro ao gravar o usuário!";
 }

@@ -13,21 +13,21 @@ Formulário de cadastro de usuários
 <h1 align="center">Cadastro de Usuários do Sistema</h1>
 <form id="f1" name="f1" method="post" action="gravarUsuario.php">
 
-<p>Nome:
+<p>Nome: *
 <label>
-<input name="nome" type="text" id="nome" placeholder="Informe o nome" size="70" maxlength="100" />
+<input name="nome" type="text" required name="nome" id="nome" placeholder="Informe o nome" size="70" maxlength="100" />
 </label>
 </p>
 
-<p>Login:
+<p>Login: *
 <label>
-<input name="login" type="text" id="login" placeholder="Informe um id de usuário" size="50" maxlength="50" />
+<input name="login" type="text" required name="login" id="login" placeholder="Informe um id de usuário" size="50" maxlength="50" />
 </label>
 </p>
 
-<p>Senha:
+<p>Senha: *
 <label>
-<input name="senha" type="password" id="txtsenha" placeholder="Informe uma senha" size="50" maxlength="50" />
+<input name="senha" type="password" required name="password" id="txtsenha" placeholder="Informe uma senha" size="50" maxlength="50" />
 </label>
 </p>
 

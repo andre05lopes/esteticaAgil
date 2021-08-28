@@ -5,6 +5,7 @@ require "funcoes.php";
 cabecalho();
 menu();
 
+//Tratamento de upload de imagens
 if(isset($_FILES['img'])){
 	date_default_timezone_set("Brazil/East"); //Timezone padrão
 	$ext = strtolower(substr($_FILES['img']['name'], -4)); //Capturando a extensão do arquivo

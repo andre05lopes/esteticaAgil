@@ -3,17 +3,17 @@ require "funcoes.php";
 cabecalho();
 menu();
 ?>
-<h1 align="center">Consultar Produtos</h1>
-<form id="f1" name="f1" method="post" action="menu_resultadoProduto.php" >
+<h1 align="center">Consultar Cliente</h1>
+<form id="f1" name="f1" method="post" action="menu_resultadoCliente.php" >
   
     <label>
         <input type="radio" name="txttipo" id="radio" value="nome" checked/>
-        Nome do Produto
+        Nome do Cliente
     </label>
     
     <label>
-        <input type="radio" name="txttipo" id="radio2" value="marca" />
-        Marca
+        <input type="radio" name="txttipo" id="radio2" value="cpf" />
+        CPF
     </label>
     
     </p>

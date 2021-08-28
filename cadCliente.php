@@ -32,15 +32,15 @@ menu();
 		
 	</p>
 		<label for="endereco">Endereço: *</label>
-		<input type="text" name="endereco" id="endereco" placeholder="Digite o endereço" size="70" maxlength="100" />
+		<input type="text" name="endereco" required name="endereco" id="endereco" placeholder="Digite o endereço" size="70" maxlength="100" />
 		
 	</p>
 		<label for="cep">CEP: *</label>
-		<input type="text" name="cep" id="cep" placeholder="12900-000" size="30" maxlength="30" />
+		<input type="text" name="cep" required name="cep" id="cep" placeholder="12900-000" size="30" maxlength="30" />
 		
 	</p>
 		<label for="num_resid">Residência: *</label>
-		<input type="text" name="num_resid" id="num_resid" placeholder="Nº" size="8" maxlength="8" />
+		<input type="text" name="num_resid" required name="num_resid" id="num_resid" placeholder="Nº" size="8" maxlength="8" />
 	
 	</p>
 
@@ -50,20 +50,20 @@ menu();
 	</p>
 
 		<label for="cidade">Cidade: *</label>
-		<input type="text" name="cidade" id="cidade" placeholder="Informe a cidade" size="50" maxlength="60" />
+		<input type="text" name="cidade" required name="cidade" id="cidade" placeholder="Informe a cidade" size="50" maxlength="60" />
 	
 	</p>
 
 		<label for="estado">Estado: *</label>
-		<input type="text" name="estado" id="estado" placeholder="Estado" size="4" maxlength="2" />
+		<input type="text" name="estado" required name="estado" id="estado" placeholder="Estado" size="4" maxlength="2" />
 	
 	</p>
 
     </p>
         <label for="ddd_cel">DDD: *</label>
-        <input type="text" name="ddd_cel" id="ddd_cel" placeholder="Informe o DDD" size="13" maxlength="2" />
+        <input type="text" name="ddd_cel" required name="ddd_cel" id="ddd_cel" placeholder="Informe o DDD" size="13" maxlength="2" />
 		<label for="num_cel">Celular: *</label>
-		<input type="text" name="num_cel" id="num_cel" placeholder="Informe o celular" size="17" maxlength="9" />
+		<input type="text" name="num_cel" required name="num_cel" id="num_cel" placeholder="Informe o celular" size="17" maxlength="9" />
 	
 	</p>
 
