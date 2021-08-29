@@ -37,11 +37,8 @@ while ($row = mysqli_fetch_array($res)) {
 	    <input type="text" name="descricao" id="descricao" placeholder="Descreva os detalhes do serviço" size="100" maxlength="100" value="<?php echo $descricao ?>"/>
 
 		<label>
-			<input type="submit" name="Salvar" id="Gravar" value="Salvar" />
-		</label>
-		<label>
-			<input type="reset" name="Limpar" id="Limpar" value="Limpar" />
-		</label>
+			<input type="submit" name="Salvar" id="Gravar" value="Alterar" />
+		</label>		
 	</p>
 </form>
 <?php

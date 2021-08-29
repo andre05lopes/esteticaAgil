@@ -121,9 +121,6 @@ value="<?php echo $email ?>" size="40" maxlength="50" />
 <label>
     <input type="submit" name="Gravar" id="Gravar" value="Alterar" />
 </label>
-<label>
-    <input type="reset" name="Limpar" id="Limpar" value="Limpar" />
-</label>
 </p>
 </form>
 

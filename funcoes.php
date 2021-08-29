@@ -63,17 +63,15 @@ function acesso(){
 function menu(){
 	echo "<div id=\"menu\">
 	<a href=\"cadCliente.php\">Cadastro de Cliente</a> |
-	<a href=\"cadUsuario.php\">Cadastra Usuarios</a> |
-	<a href=\"cadProduto.php\">Novo Produto</a> |
-	<a href=\"cadServico.php\">Novo Serviço</a> |
-	<a href=\"consultaProduto.php\">Consultar Produtos</a> |
 	<a href=\"consultaCliente.php\">Consultar Clientes</a> |
-	<a href=\"consultaServico.php\">Consultar Serviços</a> |
-	<a href=\"vendas.php\">Vendas</a> |
+	<a href=\"cadUsuario.php\">Cadastra Usuarios</a> |
+	<a href=\"consultarUsuario.php\">Consultar Usuarios</a> | <br>
+	<a href=\"cadProduto.php\">Novo Produto</a> |
+	<a href=\"consultaProduto.php\">Consultar Produtos</a> |
+	<a href=\"cadServico.php\">Novo Serviço</a> |
+	<a href=\"consultaServico.php\">Consultar Serviços</a> | <br>
+	<a href=\"agendarConsulta.php\">Agendamentos</a> | <br>	
 	<a href=\"relatorio.php\">Relatorio</a> |
-	<a href=\"acessos.php\">Acessos Sistema</a> |
-	<a href=\"mudasenha.php\">Alterar Senha</a> |
-	<a href=\"alterarProduto.php\">Alterar Produto</a> |
 	<a href=\"logout.php\">Sair</a></div>";
 	
 }

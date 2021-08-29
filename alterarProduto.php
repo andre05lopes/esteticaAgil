@@ -56,11 +56,8 @@ while ($row = mysqli_fetch_array($res)) {
 	
 	<p>
 		<label>
-			<input type="submit" name="Salvar" id="Gravar" value="Salvar" />
-		</label>
-		<label>
-			<input type="reset" name="Limpar" id="Limpar" value="Limpar" />
-		</label>
+			<input type="submit" name="Salvar" id="Gravar" value="Alterar" />
+		</label>		
 	</p>
 </form>
 <?php
