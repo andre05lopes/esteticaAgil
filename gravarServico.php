@@ -14,7 +14,7 @@ $preco = $_POST['preco'];
 $descricao = $_POST['descricao'];
 
 //Instrução SQL para gravar os dados no banco
-$sql = "insert into servicos values (0,'$nome','$descricao','$preco')";
+$sql = "INSERT INTO servicos VALUES (0,'$nome','$descricao','$preco')";
 //A variável $res irá conectar no banco e executar a gravação dos dados
 $res = mysqli_query($con,$sql);
 

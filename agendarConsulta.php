@@ -12,57 +12,56 @@ $regNome = $conexao->query($sqlCliente);
 $resultado = $conexao->query($sqlCliente);
 $registro = $resultado->fetch();
 
-
 $sqlServico = "SELECT nome FROM servicos ORDER BY nome";
 $regNomeServico = $conexao->query($sqlServico);
 
 //acesso();
 ?>
-<h1>Agendamento de Consultas</h1>
 <form method="POST" action="gravarAgendaConsulta.php" >
+<h1>Agendamento de Consultas</h1>
 
     <labeL for="nome">Nome do cliente:</label>
-                <select name="nome">
-                    <option value="null" selected="selected">Selecione um cliente</option>
-                    <?php
-                        while ($linha = $regNome->fetch() ) {
-                            $str = "<option ";
+        <select name="nome">
+            <option value="null" selected="selected">Selecione um cliente</option>
+                <?php
+                    while ($linha = $regNome->fetch() ) {
+                        $str = "<option ";
                             if ($linha["nome"] == $registro["nome"]){
-                            $str .= "selected = 'selected' ";
+                                $str .= "selected = 'selected' ";
                             }
-                            $str .= " value='" 
-                                . $linha['nome']
-                                ."'>". $linha['nome']. "</option>" ; 
-                                echo $str;
+                                $str .= " value='" 
+                                    . $linha['nome']
+                                        ."'>". $linha['nome']. "</option>" ; 
+                                            echo $str;
                         }                
                 ?>                
             </select>
     </p>
     
     <labeL for="nome">Serviço:</label>
-                <select name="servico">
-                    <option value="null" selected="selected">Selecione um serviço</option>
-                    <?php
-                        while ($linha = $regNomeServico->fetch() ) {
-                            $str = "<option ";
+        <select name="servico">
+            <option value="null" selected="selected">Selecione um serviço</option>
+               <?php
+                   while ($linha = $regNomeServico->fetch() ) {
+                        $str = "<option ";
                             if ($linha["nome"] == $registro["nome"]){
-                            $str .= "selected = 'selected' ";
+                                $str .= "selected = 'selected' ";
                             }
-                            $str .= " value='" 
-                                . $linha['nome']
-                                ."'>". $linha['nome']. "</option>" ; 
-                                echo $str;
+                                $str .= " value='" 
+                                    . $linha['nome']
+                                        ."'>". $linha['nome']. "</option>" ; 
+                                            echo $str;
                         }                
                 ?>                
             </select>
-                    </p>
+    </p>
 
 		<label for="preco">Data: </label>
-		<input type="date" name="data" id="data" size="15" maxlength="15" />
+		    <input type="date" name="data" id="data" size="15" maxlength="15" />
 
     </p>
         <label for="preco">Horário: </label>
-	    <input type="text" name="hora" id="hora" placeholder="00:00" size="6" maxlength="6" />
+	        <input type="text" name="hora" id="hora" placeholder="00:00" size="6" maxlength="6" />
 	
 	<p>
 		<label>

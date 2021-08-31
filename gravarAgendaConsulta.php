@@ -15,7 +15,7 @@ $hora        = $_POST['hora'];
 $servico 	 = $_POST['servico'];
 
 //Instrução SQL para gravar os dados no banco
-$sql = "insert into agendamento values (0,'$nomeCliente','$data','$hora','$servico')";
+$sql = "INSERT INTO agendamento VALUES (0,'$nomeCliente','$data','$hora','$servico')";
 //A variável $res irá conectar no banco e executar a gravação dos dados
 $res = mysqli_query($con,$sql);
 

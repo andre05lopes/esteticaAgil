@@ -13,7 +13,7 @@ $senha =  $_POST["senha"];
 $con = mysqli_connect("localhost","root","","estetica_agil");
 
 //Query para inserir valores no banco de dados
-$sql = "insert into usuarios values (0,'$nome','$login','$senha')";
+$sql = "INSERT INTO usuarios VALUES (0,'$nome','$login','$senha')";
 //Executa a instrução
 $res = mysqli_query($con,$sql);
 

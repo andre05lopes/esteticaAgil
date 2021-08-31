@@ -11,7 +11,7 @@ $pesquisa = $_GET["txtpesquisa"];
 
 //Conexão com o banco e instrução de exclusão de registro
 $con = mysqli_connect("localhost","root","","estetica_agil");
-$sql = "delete from cliente where id = $id";
+$sql = "DELETE FROM cliente WHERE id = $id";
 $res = mysqli_query($con,$sql);
 
 //Resultado for igual a 1 selecionado, efetua a exclusão

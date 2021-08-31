@@ -8,9 +8,10 @@ $id = $_GET["id"];
 
 $con = mysqli_connect("localhost","root","","estetica_agil");
 
-$sql = "select * from cliente where id = $id";
+$sql = "SELECT * FROM cliente WHERE id = $id";
 $res = mysqli_query($con,$sql);
 
+//Varrer as linhas da instrução SQL
 while ($row = mysqli_fetch_array($res)) {
 	$id		            =    $row[0];
 	$nome               =    $row[1];

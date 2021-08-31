@@ -13,7 +13,7 @@ $preco 		= $_POST["preco"];
 
 //Conecta ao banco e atualiza os dados
 $con = mysqli_connect("localhost","root","","estetica_agil");
-$sql = "update servicos set nome='$nome', descricao='$descricao', preco='$preco' where id='$id'";
+$sql = "UPDATE servicos SET nome='$nome', descricao='$descricao', preco='$preco' WHERE id='$id'";
 
 $res = mysqli_query($con,$sql);
 

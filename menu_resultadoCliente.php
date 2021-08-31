@@ -7,7 +7,7 @@ menu();
 $pesquisa=isset($_POST["txtpesquisa"])?$_POST["txtpesquisa"]:$_GET["txtpesquisa"];
 $tipo=isset($_POST["txttipo"])?$_POST["txttipo"]:$_GET["txttipo"];
 $con = mysqli_connect("localhost","root","","estetica_agil");
-$sql = "select * from cliente where $tipo like '%$pesquisa%'";
+$sql = "SELECT * FROM cliente WHERE $tipo LIKE '%$pesquisa%'";
 $res = mysqli_query($con,$sql);
 
 echo "<p><br><p>

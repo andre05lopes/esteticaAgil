@@ -26,7 +26,7 @@ $descricao = $_POST['descricao'];
 $img = $novoNome;
 
 //Instrução SQL para gravar os dados no banco
-$sql = "insert into produtos values (0,'$nome','$qtd','$marca','$preco',"
+$sql = "INSERT INTO produtos VALUES (0,'$nome','$qtd','$marca','$preco',"
 . " '$descricao','$img')";
 //A variável $res irá conectar no banco e executar a gravação dos dados
 $res = mysqli_query($con,$sql);

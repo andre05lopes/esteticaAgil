@@ -6,7 +6,7 @@ menu();
 
 $id = $_GET["id"];
 $con = mysqli_connect("localhost","root","","estetica_agil");
-$sql = "select * from cliente where id = $id";
+$sql = "SELECT * FROM cliente WHERE id = $id";
 $res = mysqli_query($con,$sql);
 
 echo "<table width='100%'>

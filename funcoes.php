@@ -70,7 +70,8 @@ function menu(){
 	<a href=\"consultaProduto.php\">Consultar Produtos</a> |
 	<a href=\"cadServico.php\">Novo Serviço</a> |
 	<a href=\"consultaServico.php\">Consultar Serviços</a> | <br>
-	<a href=\"agendarConsulta.php\">Agendamentos</a> | <br>	
+	<a href=\"agendarConsulta.php\">Agendamentos</a> |
+	<a href=\"consultaAgenda.php\">Consultar Agendamento</a> |
 	<a href=\"relatorio.php\">Relatorio</a> |
 	<a href=\"logout.php\">Sair</a></div>";
 	

@@ -8,7 +8,7 @@ $pesquisa = $_POST["txtpesquisa"];
 $nome = $_POST["txttipo"];
 $con = mysqli_connect("localhost","root","","estetica_agil");
 
-$sql = "select * from produtos where $nome like '%$pesquisa%'";
+$sql = "SELECT * FROM produtos WHERE $nome LIKE '%$pesquisa%'";
 $res = mysqli_query($con,$sql);
 
 echo "Resultado da pesquisa por <b>$_POST[txtpesquisa]:

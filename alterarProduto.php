@@ -8,7 +8,7 @@ $id = $_GET["id"];
 
 $con = mysqli_connect("localhost","root","","estetica_agil");
 
-$sql = "select * from produtos where id = $id";
+$sql = "SELECT * FROM produtos WHERE id = $id";
 $res = mysqli_query($con,$sql);
 
 while ($row = mysqli_fetch_array($res)) {

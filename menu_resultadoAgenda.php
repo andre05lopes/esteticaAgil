@@ -11,7 +11,7 @@ $tipo=isset($_POST["txttipo"])?$_POST["txttipo"]:$_GET["txttipo"];
 //Conecta ao banco de dados
 $con = mysqli_connect("localhost","root","","estetica_agil");
 //Instrução SQL
-$sql = "SELECT * FROM usuarios WHERE $tipo LIKE '%$pesquisa%'";
+$sql = "SELECT * FROM agendamento WHERE $tipo LIKE '%$pesquisa%'";
 //Conecta ao banco e executa a instrução SQL
 $res = mysqli_query($con,$sql);
 
@@ -25,24 +25,32 @@ echo "<table width='100%'>
 <tr>
 <td>Código</td>
 <td>Nome</td>
-<td>Login</td>
+<td>Data</td>
+<td>Hora</td>
+<td>Procedimento</td>
 <td>Excluir</td>
 <td>Alterar</td>
 <tr>";
 
-//$row recebe o $res e exibe dados do usuário
+//$row recebe o $res e exibe os detalhes do serviço
 while ($row = mysqli_fetch_array($res)) {
-	$conta=1;
+    $conta=1;
 	echo "<tr bgcolor='#cccccc'>
 	<td>$row[0]</td>
 	<td>
+	<a href='detalheAgenda.php?id=$row[0]'>
 	$row[1]</a>
 	</td>
 	<td>$row[2] </td>
+    <td>$row[3] </td>
+    <td>$row[4] </td>
+
 	<td>
-	<a href=\"#\" onclick=\"excluir('excluirUsuario.php?id=$row[0]&txttipo=$tipo&txtpesquisa=$pesquisa','Codigo do Serviço ($row[0])') \";>Excluir usuário</a>
+	<a href='alterarAgendaConsulta.php?id=$row[0]'>Alterar</a></td>
 	</td>
-	<td><a href='alterarUsuario.php?id=$row[0]'>Alterar senha</a></td>
+    <td>
+    <a href=\"#\" onclick=\"excluir('excluirAgenda.php?id=$row[0]&txttipo=$tipo&txtpesquisa=$pesquisa','Codigo da Agenda ($row[0])') \";>Excluir</a>
+    </td>
 	</tr>";
 }
 echo "</table><p>";

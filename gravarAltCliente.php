@@ -25,12 +25,12 @@ $dtnasc         = $_POST['dtnasc'];
 
 //Conecta ao banco e atualiza os dados
 $con = mysqli_connect("localhost","root","","estetica_agil");
-$sql = "update cliente set nome ='$nome', cpf='$cpf',"
+$sql = "UPDATE cliente SET nome ='$nome', cpf='$cpf',"
 . " endereco='$endereco', cep='$cep', num_resid='$num_resid',"
 . " complemento='$complemento', cidade='$cidade', estado='$estado',"
 . " num_cel='$num_cel', ddd_cel='$ddd_cel', num_tel='$num_tel',"
 . " ddd_tel='$ddd_tel', email='$email', genero='$genero',"
-. " dtnasc='$dtnasc' where id='$id'";
+. " dtnasc='$dtnasc' WHERE id='$id'";
 
 $res = mysqli_query($con,$sql);
 

@@ -7,19 +7,21 @@ menu();
 
 //Variáveis
 $id 		= $_POST["id"];
-$senha 		= $_POST["senha"];
+//$nome 		= $_POST["nome"];
+$data 	    = $_POST["data"];
+$hora 		= $_POST["hora"];
 
 //Conecta ao banco e atualiza os dados
 $con = mysqli_connect("localhost","root","","estetica_agil");
-$sql = "UPDATE usuarios SET senha='$senha' WHERE id='$id'";
+$sql = "UPDATE agendamento SET data='$data', hora='$hora' WHERE id='$id'";
 
 $res = mysqli_query($con,$sql);
 
 //Se o resultado for igual a 1 selecionado, executa a ação
 if($res==1){
-	echo "<p><br />Senha alterada com sucesso!";
+	echo "<p><br />Agenda alterada com sucesso!";
 }else{
-	echo "<p>Erro ao alterar senha!";
+	echo "<p>Erro ao alterar agenda!";
 }
 ?>
 

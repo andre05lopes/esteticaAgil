@@ -11,7 +11,7 @@ $tipo=isset($_POST["txttipo"])?$_POST["txttipo"]:$_GET["txttipo"];
 //Conecta ao banco de dados
 $con = mysqli_connect("localhost","root","","estetica_agil");
 //Instrução SQL
-$sql = "select * from servicos where $tipo like '%$pesquisa%'";
+$sql = "SELECT * FROM servicos WHERE $tipo LIKE '%$pesquisa%'";
 //Conecta ao banco e executa a instrução SQL
 $res = mysqli_query($con,$sql);
 

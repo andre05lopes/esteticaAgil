@@ -26,7 +26,7 @@ $genero = $_POST['genero'];
 $dtnasc = $_POST['dtnasc'];
 
 //Instrução SQL para gravar os dados no banco
-$sql = "insert into cliente values (0,'$nome','$cpf','$endereco','$cep',"
+$sql = "INSERT INTO cliente VALUES (0,'$nome','$cpf','$endereco','$cep',"
 . "'$num_resid','$complemento','$cidade','$estado','$num_cel','$ddd_cel',"
 . "'$num_tel','$ddd_tel','$email','$genero','$dtnasc')";
 //A variável $res irá conectar no banco e executar a gravação dos dados
