@@ -37,7 +37,7 @@ while ($row = mysqli_fetch_array($res)) {
 	</p>
 
 	    <label for="hora">Horário: </label>
-	    <input type="text" name="hora" id="hora" size="6" maxlength="6" value="<?php echo $hora ?>"/>
+	    <input type="time" name="hora" id="hora" size="6" maxlength="6" value="<?php echo $hora ?>"/>
 
     </p>
 

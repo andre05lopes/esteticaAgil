@@ -18,7 +18,7 @@ $regNomeServico = $conexao->query($sqlServico);
 //acesso();
 ?>
 <form method="POST" action="gravarAgendaConsulta.php" >
-<h1>Agendamento de Consultas</h1>
+<h1 align="center">Agendamento de Consultas</h1>
 
     <labeL for="nome">Nome do cliente:</label>
         <select name="nome">
@@ -38,9 +38,9 @@ $regNomeServico = $conexao->query($sqlServico);
             </select>
     </p>
     
-    <labeL for="nome">Serviço:</label>
+    <labeL for="nome">Procedimento:</label>
         <select name="servico">
-            <option value="null" selected="selected">Selecione um serviço</option>
+            <option value="null" selected="selected">Selecione um procedimento</option>
                <?php
                    while ($linha = $regNomeServico->fetch() ) {
                         $str = "<option ";
@@ -60,8 +60,8 @@ $regNomeServico = $conexao->query($sqlServico);
 		    <input type="date" name="data" id="data" size="15" maxlength="15" />
 
     </p>
-        <label for="preco">Horário: </label>
-	        <input type="text" name="hora" id="hora" placeholder="00:00" size="6" maxlength="6" />
+        <label for="hora">Horário: </label>
+	        <input type="time" name="hora" id="hora" placeholder="00:00" size="6" maxlength="6" />
 	
 	<p>
 		<label>

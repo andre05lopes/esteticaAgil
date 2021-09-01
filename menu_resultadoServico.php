@@ -25,7 +25,7 @@ echo "<table width='100%'>
 <tr>
 <td>Código</td>
 <td>Nome</td>
-<td>Preco</td>
+<td>Preco R$</td>
 <td>Excluir</td>
 <td>Alterar</td>
 <tr>";

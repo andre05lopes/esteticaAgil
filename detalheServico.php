@@ -20,7 +20,7 @@ while($row = mysqli_fetch_array($res)){
 	Código: $row[0]<br>
 	Nome: $row[1]<br>
 	Descrição: $row[2]<br>
-	Preço: $row[3]<br>
+	Preço: R$ $row[3]<br>
 	</td>
 	</tr>";
 }
