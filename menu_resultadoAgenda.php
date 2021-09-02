@@ -17,7 +17,7 @@ $res = mysqli_query($con,$sql);
 
 //Retorna o tipo de pesquisa
 echo "<p><br><p>
-Resultado da pesquisa por <b>$tipo
+Resultado da pesquisa por <b>$pesquisa
 </b><br>";
 //Contador
 $conta = 0;
@@ -34,14 +34,15 @@ echo "<table width='100%'>
 
 //$row recebe o $res e exibe os detalhes do serviço
 while ($row = mysqli_fetch_array($res)) {
-    $conta=1;
+    $data = inverterdata($row[2]);
+	$conta=1;
 	echo "<tr bgcolor='#cccccc'>
 	<td>$row[0]</td>
 	<td>
 	<a href='detalheAgenda.php?id=$row[0]'>
 	$row[1]</a>
 	</td>
-	<td>$row[2] </td>
+	<td>$data </td>
     <td>$row[3] </td>
     <td>$row[4] </td>
 

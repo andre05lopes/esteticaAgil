@@ -17,7 +17,7 @@ $res = mysqli_query($con,$sql);
 
 //Retorna o tipo de pesquisa
 echo "<p><br><p>
-Resultado da pesquisa por <b>$tipo
+Resultado da pesquisa por <b>$pesquisa
 </b><br>";
 //Contador
 $conta = 0;

@@ -11,7 +11,7 @@ $sql = "SELECT * FROM produtos WHERE $tipo LIKE '%$pesquisa%'";
 $res = mysqli_query($con,$sql);
 
 echo "<p><br><p>
-Resultado da pesquisa por <b>$tipo
+Resultado da pesquisa por <b>$pesquisa
 </b><br>";
 $conta = 0;
 echo "<table width='100%'>
