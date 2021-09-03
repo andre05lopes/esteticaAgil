@@ -22,7 +22,6 @@ echo "<table width='100%'>
 <td>Marca</td>
 <td>Preço R$</td>
 <td>Descrição</td>
-<td>IMG</td>
 <td>Excluir</td>
 <td>Alterar</td>
 <tr>";
@@ -39,8 +38,7 @@ while ($row = mysqli_fetch_array($res)) {
 	<td>$row[2] </td>
 	<td>$row[3] </td>
     <td>$row[4] </td>
-    <td>$row[5] </td>
-	<td>$row[6] </td>
+    <td>$row[5] </td>	
     <td>
 	<a href=\"#\" onclick=\"excluir('excluirProduto.php?id=$row[0]&txttipo=$tipo&txtpesquisa=$pesquisa','Codigo do Produto ($row[0])') \";>Excluir</a>
 	</td>

@@ -15,16 +15,16 @@ $registro = $resultado->fetch();
 
 ?>
 <h1 align="center">Ficha de Anamnese Facial</h1>
-<form id="f1" name="f1" method="POST" action="gravarAnamFacial.php" >
+<form method="POST" enctype="multipart/form-data" action="gravarAnamFacial.php" >
 
 <labeL for="nome">Nome do paciente:</label>
         <select name="nome">
-            <option value="null" selected="selected">Selecione um paciente</option>
-               <?php
-                   while ($linha = $regNome->fetch() ) {
+            <option value="null" selected="selected">Selecione um nome</option>
+                <?php
+                    while ($linha = $regNome->fetch() ) {
                         $str = "<option ";
                             if ($linha["nome"] == $registro["nome"]){
-                                $str .= "selected = 'selected' ";
+                                //$str .= "selected = 'selected' ";
                             }
                                 $str .= " value='" 
                                     . $linha['nome']

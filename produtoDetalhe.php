@@ -20,16 +20,18 @@ echo "<table width='100%'>
 </tr>";
 
 //Laço que varrerá o array de produtos para exibir seus detalhes
-while($row = mysqli_fetch_array($res)){
+while($row = mysqli_fetch_array($res)){	
 	echo "<tr bgcolor='#cccccc'>
 	<td>
 	Código: $row[0]<br>
 	Nome: $row[1]<br>
-	Qtd: $row[2]<br>
+	Quantidade: $row[2]<br>
 	Marca: $row[3]<br>
 	Preço: $row[4]<br>
-	Descrição: $row[5]<br>
-	IMG: $row[6]<br>
+	Descrição: $row[5]<br> 	
+	</td>	
+	<td width='10%'>
+	<img src='./imagensProduto/$row[6]' width=\"120px\" height=\"120px\">	
 	</td>
 	</tr>";
 }

@@ -17,7 +17,7 @@ $regNomeServico = $conexao->query($sqlServico);
 
 //acesso();
 ?>
-<form method="POST" action="gravarAgendaConsulta.php" >
+<form method="POST" enctype="multipart/form-data" action="gravarAgendaConsulta.php" >
 <h1 align="center">Agendamento de Consultas</h1>
 
     <labeL for="nome">Nome do cliente:</label>
@@ -27,7 +27,7 @@ $regNomeServico = $conexao->query($sqlServico);
                     while ($linha = $regNome->fetch() ) {
                         $str = "<option ";
                             if ($linha["nome"] == $registro["nome"]){
-                                $str .= "selected = 'selected' ";
+                                //$str .= "selected = 'selected' ";
                             }
                                 $str .= " value='" 
                                     . $linha['nome']
