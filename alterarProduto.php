@@ -23,6 +23,7 @@ while ($row = mysqli_fetch_array($res)) {
 }
 ?>
 <body><p><br>
+<h1 align="center">Alterar Produto</h1>
     <form id="f1" name="f1" method="post" action="gravaraltProduto.php" enctype="multipart/form-data" >
         <input type="hidden" name="id" value="<?php echo $id ?>" />
 
