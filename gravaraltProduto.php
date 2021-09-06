@@ -28,7 +28,7 @@ $img 		= $novoNome;
 $con = mysqli_connect("localhost","root","","estetica_agil");
 $sql = "UPDATE produtos SET nome ='$nome', qtd='$qtd',"
 . " marca='$marca', preco='$preco', descricao='$descricao',"
-. "img='$img' WHERE id='$id'";
+. "img='$novoNome' WHERE id='$id'";
 
 $res = mysqli_query($con,$sql);
 

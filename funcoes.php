@@ -72,7 +72,8 @@ function menu(){
 	<a href=\"consultaServico.php\">Consultar Serviços</a> | <br>
 	<a href=\"agendarConsulta.php\">Agendamentos</a> |
 	<a href=\"consultaAgenda.php\">Consultar Agendamento</a> | <br>
-	<a href=\"cadAnamFacial.php\">Ficha Anamnese Facial</a> | <br>
+	<a href=\"cadAnamFacial.php\">Ficha Anamnese Facial</a> | 
+	<a href=\"consultaAnamFacial.php\">Consultar Ficha de Anamnese Facial</a> | <br>
 	<a href=\"cadDespesa.php\">Despesas</a> |
 	<a href=\"consultaDespesa.php\">Consultar Despesas</a> |
 	<a href=\"relatorio.php\">Relatorio</a> |
